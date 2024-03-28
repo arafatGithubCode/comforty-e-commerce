@@ -1,7 +1,8 @@
-//COLOR VARIABLE
+// VARIABLE
 $dark-blue-color: hsl(248, 31%, 20%);
 $white-color: #fff;
 $black-color: black;
+$ts: all 500ms ease;
 
 header .subheader {
   background-color: $dark-blue-color;
@@ -33,6 +34,131 @@ header .subheader {
     a {
       color: $white-color;
       font-size: 13px;
+    }
+  }
+}
+
+header .main-header {
+  background-color: #f0f2f3;
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      span {
+        font-size: 26px;
+        color: #272343;
+        font-weight: 500;
+      }
+    }
+    .search-input {
+      background-color: $white-color;
+      border-radius: 5px;
+      padding: 12px 16px;
+      transition: $ts;
+      &:focus-within,
+      &:active {
+        border: 1px solid gray;
+      }
+      input {
+        text-transform: capitalize;
+      }
+    }
+    .header-action {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      .cart {
+        display: flex;
+        gap: 8px;
+        &:hover {
+          color: $white-color;
+          &:hover span:last-child {
+            background-color: white;
+            color: $black-color;
+          }
+        }
+        span:last-child {
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          background-color: #007580;
+          color: white;
+          font-size: 10px;
+          text-align: center;
+          line-height: 20px;
+          margin-left: 12px;
+        }
+      }
+      a {
+        background-color: $white-color;
+        padding: 11px 16px;
+        border-radius: 8px;
+        transition: $ts;
+        &:hover {
+          background-color: #007580;
+        }
+        &:hover svg {
+          background-color: $white-color;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+
+header nav {
+  background-color: $white-color;
+  border-bottom: 1px solid #f0f2f3;
+  padding: 14px 0;
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    .category {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border: 1px solid #f0f2f3;
+      padding: 16px 24px;
+      border-radius: 6px;
+      margin-right: 32px;
+      span {
+        color: #272343;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      display: flex;
+      gap: 32px;
+      a {
+        font-size: 14px;
+        font-weight: 500;
+        color: #636270;
+        line-height: 110%;
+        transition: $ts;
+        &:hover {
+          color: #007580;
+        }
+      }
+    }
+    .contact {
+      margin-left: auto;
+      p {
+        margin: 0;
+        font-size: 14px;
+        color: #636270;
+        span {
+          color: #272343;
+          font-weight: 600;
+        }
+      }
     }
   }
 }
