@@ -1,0 +1,38 @@
+//COLOR VARIABLE
+$dark-blue-color: hsl(248, 31%, 20%);
+$white-color: #fff;
+$black-color: black;
+
+header .subheader {
+  background-color: $dark-blue-color;
+  padding: 14px 0;
+  &-left {
+    p {
+      color: $white-color;
+      font-size: 13px;
+      margin: 0;
+    }
+  }
+  &-right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 24px;
+    select {
+      background-color: transparent;
+      border: unset;
+      &:focus {
+        border: unset;
+        outline: unset;
+      }
+      option {
+        color: $black-color;
+      }
+    }
+    select,
+    a {
+      color: $white-color;
+      font-size: 13px;
+    }
+  }
+}

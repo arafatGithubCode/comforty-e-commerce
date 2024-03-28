@@ -1,3 +1,6 @@
-h1 {
-  background-color: red;
-}
+//base
+@import "./base/reset";
+@import "./base/typography";
+
+//components
+@import "./components/header";
