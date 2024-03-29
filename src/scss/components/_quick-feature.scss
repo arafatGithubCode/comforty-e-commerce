@@ -1,0 +1,36 @@
+.quick-feature {
+  margin-top: -82px;
+  margin-bottom: 26px;
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 50px 70px;
+  }
+  &-item {
+    display: flex;
+    gap: 16px;
+    .image {
+      svg {
+      }
+    }
+    .info {
+      h3 {
+        margin: 0;
+        font-style: 18px;
+        font-weight: 400;
+        line-height: 110%;
+        margin-bottom: 6px;
+      }
+      p {
+        margin: 0;
+        font-style: 14px;
+        font-weight: 300;
+        line-height: 110%;
+        color: $gray;
+      }
+    }
+  }
+}
