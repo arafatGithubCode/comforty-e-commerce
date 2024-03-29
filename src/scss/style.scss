@@ -2,5 +2,14 @@
 @import "./base/reset";
 @import "./base/typography";
 
+//utils
+@import "./utils/variables";
+
 //components
-@import "./components/header";
+@import "./components/button";
+
+//layouts
+@import "./layouts/header";
+
+//pages
+@import "./pages/home";
